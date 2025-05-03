@@ -1,0 +1,12 @@
+[font]
+size = 15
+normal = { family = "JetBrainsMonoNL Nerd Font", style = "Regular" }
+
+[window]
+opacity = 0.6
+blur = true
+startup_mode = "Maximized"
+decorations = "None"
+
+[mouse]
+hide_when_typing = true
