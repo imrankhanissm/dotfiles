@@ -8,7 +8,12 @@ fi
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="/opt/homebrew/opt/python@3.10/bin:$PATH"
 
-source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+if [[ -f /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme ]]; then
+  source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+fi
+if [[ -f ~/powerlevel10k/powerlevel10k.zsh-theme ]]; then
+  source ~/powerlevel10k/powerlevel10k.zsh-theme
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
