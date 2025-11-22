@@ -21,8 +21,11 @@ fi
 export PATH=/usr/local/nodejs/bin:$PATH
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+# source <(ng completion script)
 export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 export PATH=$HOME/.local/bin:$PATH
 export ASPNETCORE_ENVIRONMENT=Development
+
+# To customize prompt, run `p10k configure` or edit ~/dotfiles/p10k/.p10k.zsh.
+[[ ! -f ~/dotfiles/p10k/.p10k.zsh ]] || source ~/dotfiles/p10k/.p10k.zsh
